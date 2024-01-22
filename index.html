@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   
+    <link rel="stylesheet" href="\style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/heroes/outline.css" rel="stylesheet" />
+    <title>Portfolio</title>
+  </head>
+
+  <body>
+    <div class="containarr">
+      <nav class="bg-black h-18 p-6 fixed top-0 w-full z-50 flex">
+        <div class="text-xl font-bold text-yellow-300">
+          <p>Ashish Dhakal</p>
+        </div>
+        <div class="container mx-auto flex items-center justify-end">
+          <ul class="flex space-x-8">
+            <li>
+              <a href="#" class="text-white text-2xl px-4 py-3 hover:bg-white hover:text-black hover:border-red-500 hover:border-4 hover:rounded-full"><i class="fas fa-home"></i> Home</a>
+            </li>
+            <li>
+              <a href="#" class="text-white px-4 text-2xl py-3 hover:bg-white hover:text-black hover:border-red-500 hover:border-4 hover:rounded-full" onclick="scrollToAbout()" ><i class="fas fa-info-circle"></i> About</a>
+            </li>
+            <li>
+              <a href="#" class="text-white px-4 text-2xl py-3 hover:bg-white hover:text-black hover:border-red-500 hover:border-4 hover:rounded-full" onclick="scrollToProjects()"><i class="fas fa-laptop-code"></i> Projects</a>
+            </li>
+            <li>
+              <a href="#" class="text-white px-4 text-2xl py-3 hover:bg-white hover:text-black hover:border-red-500 hover:border-4 hover:rounded-full" onclick="scrollPage()"><i class="fas fa-envelope"></i> Blogs</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- Add padding or margin to create space below the fixed navbar -->
+      <div class="pt-20">
+        <hr class="border-t border-blue-200" />
+      </div>
+
+     
+
+      <div class="inset-0 flex justify-center mt-20">
+        <div class="rounded-full overflow-hidden w-64 h-64">
+          <img class="object-cover w-full h-full rounded-full border-4 border-yellow-400" src="/myapp/6.jpg" alt="" />
+        </div>
+      </div>
+      <div class="text-center mt-12">
+        <p class="text-5xl text-white tracking-wider">
+          <span class="text-yellow-300 font-bold text-6xl animate-pulse">A</span>shish Dhakal
+        </p>
+        <p class="text-2xl animate-pulse text-yellow-200">Computer Engineer</p>
+      </div>
+
+      <div class="flex justify-center space-x-8 mt-20 p-15">
+        <a href="https://github.com/ashish71-ui" target="_blank" class="mt-12 text-white hover:text-blue-400"><i class="fab fa-github fa-lg"></i></a>
+        <a href="https://www.facebook.com/aashish.dhakal.54/" target="_blank" class="mt-12 text-white hover:text-blue-400"><i class="fab fa-facebook fa-lg"></i></a>
+        <a href="https://www.linkedin.com/in/aashish-dhakal-b72723213/" target="_blank" class="mt-12 text-white hover:text-blue-400"><i class="fab fa-linkedin-in fa-lg"></i></a>
+        <a href="mailto:aashishdhakal71@gmail.com" class="mt-12 text-white hover:text-blue-400"><i class="far fa-envelope fa-lg"></i></a>
+      </div>
+    </div>
+    <hr class="bg-indigo-100" />
+    <div class="contentcontainar">
+      <div class="flex flex-row bg-indigo-300 bg-opacity-20 justify-center items-center p-20">
+        <div class="about justify-center flex flex-col items-center p-10">
+          <div class="text-5xl flex">
+            <h5>About Me</h5>
+          </div>
+
+          <div class="font-mono font-bold text-1xl text-center mt-5 bg-indigo-100 bg-opacity-25 w-400 h-500 p-10">
+            <p class="tracking-wider">
+              Passionate web developer skilled in creating seamless, <br />user-centric websites. Proficient in HTML, CSS, and JavaScript,<br /> I bring concepts to life with responsive designs and interactive functionality. <br /> Let's build your digital presence together.
+            </p>
+          </div>
+        </div>
+
+       
+      </div>
+    </div>
+    <hr class="bg-indigo-100" />
+    <div class="flex flex-row bg-indigo-300 bg-opacity-20 justify-center items-center">
+      <div class="about justify-center flex flex-col items-center p-10">
+        <div class="text-5xl flex">
+          <h5>MY SKILLS</h5>
+        </div>
+        <div class="flex justify-between items-center p-10">
+          <div class="border border-gray-300 p-4 m-4 rounded-lg text-center">
+            <i class="fab fa-html5 text-5xl text-blue-500 mb-4"></i>
+          </div>
+          <div class="border border-gray-300 p-4 m-4 rounded-lg text-center">
+            <i class="fab fa-css3 text-5xl text-blue-500 mb-4"></i>
+          </div>
+          <div class="border border-gray-300 p-4 m-4 rounded-lg text-center">
+            <i class="fab fa-js text-5xl text-blue-500 mb-4"></i>
+          </div>
+          <div class="border border-gray-300 p-4 m-4 rounded-lg text-center">
+            <i class="fab fa-python text-5xl text-yellow-500 mb-4"></i>
+          </div>
+        </div>
+        <div class="flex justify-around">
+          <!-- Web Development Container -->
+          <div class="border border-gray-300 p-6 rounded-lg text-center flex-1 m-1 bg-indigo-100 bg-opacity-25">
+            <h2 class="text-2xl font-bold mb-4">Web Development</h2>
+            <ul class="list-disc pl-6">
+              <li>Proficient in HTML, CSS, and JavaScript.</li>
+              <li>Experienced in building responsive and user-friendly web interfaces.</li>
+              <li>Utilization of Tailwind CSS for efficient styling.</li>
+            </ul>
+          </div>
+
+          <!-- Programming Languages Container -->
+          <div class="border border-gray-300 p-6 rounded-lg text-center flex-1 m-1 bg-indigo-100 bg-opacity-25">
+            <h2 class="text-2xl font-bold mb-4">Programming Languages</h2>
+            <ul class="list-disc pl-6">
+              <li>
+                <strong>Python:</strong> Well-versed in Python programming.
+              </li>
+              <li>
+                <strong>C, C++:</strong> Proficient in the fundamentals of C and C++.
+              </li>
+            </ul>
+          </div>
+
+          <!-- Web Frameworks Container -->
+          <div class="border border-gray-300 p-6 rounded-lg text-center flex-1 m-1 bg-indigo-100 bg-opacity-25">
+            <h2 class="text-2xl font-bold mb-4">Web Frameworks</h2>
+            <ul class="list-disc pl-6">
+              <li>
+                <strong>Django:</strong> Skilled in using the Django web framework for high-level Python development.
+              </li>
+            </ul>
+          </div>
+
+          <!-- Mobile App Development Container -->
+          <div class="border border-gray-300 p-6 rounded-lg text-center flex-1 m-1 bg-indigo-100 bg-opacity-25">
+            <h2 class="text-2xl font-bold mb-4">Mobile App Development</h2>
+            <ul class="list-disc pl-6">
+              <li>
+                <strong>Flutter:</strong> Familiar with Flutter for building cross-platform mobile applications.
+              </li>
+            </ul>
+          </div>
+          <div class="border border-gray-300 p-6 rounded-lg text-center flex-1 m-1 bg-indigo-100 bg-opacity-25">
+            <h2 class="text-2xl font-bold mb-4">EXPERIENCE</h2>
+            <ul class="list-disc pl-6">
+              <li>
+                <strong>INTERN AT PAHADI RESEARCH:</strong> Currently I am working in Pahadi Research company,USA as a intern where i am developing my skills on flutter and c#.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr class="bg-indigo-100" />
+    <div class="justify-center items-center flex flex-col p-5">
+      <div class="text-5xl flex w-full justify-center p-5">
+        <h1>MY PROJECTS</h1>
+      </div>
+      <hr class="p-1" />
+      <div class="w-full flex p-5 justify-center bg-indigo-100 bg-opacity-75">
+        <div class="rounded-full overflow-hidden w-64 h-64 justify-center items-center flex flex-col">
+          <img class="object-cover h-full rounded-full border-4 border-yellow-400 justify-end" src="/myapp/as.jpg" alt="" />
+        </div>
+        <div class="flex flex-col font-mono font-bold text-1xl text-center mt-5 p-10">
+          <h1 class="ml-25 font-bold text-2xl">Audio to sign language translator</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, hic. <br /> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima, vel.
+          </p>
+        </div>
+        <div class="m-20">
+          <a href="https://github.com/ashish71-ui/Audio-to-sign-language-translator " target="_blank"><button class="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded w-20">Github</button></a>
+        </div>
+      </div>
+      <hr class="p-1" />
+      <div class="w-full flex p-5 justify-center bg-indigo-100 bg-opacity-75">
+        <div class="rounded-full overflow-hidden w-64 h-64 justify-center items-center flex">
+          <img class="object-cover h-full rounded-full border-4 border-yellow-400 justify-end" src="/media/myapp/lms.jpg" alt="" />
+        </div>
+        <div class="flex flex-col font-mono font-bold text-1xl text-center mt-5 p-10">
+          <h1 class="ml-25 font-bold text-2xl">Library management system</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, hic.</p>
+        </div>
+        <div class="m-20">
+          <a href="https://github.com/ashish71-ui/library-management-system" target="_blank"><button class="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded w-20">Github</button></a>
+        </div>
+      </div>
+      <hr class="p-1" />
+
+      <div class="w-full flex p-5 justify-center bg-indigo-100 bg-opacity-75">
+        <div class="rounded-full overflow-hidden w-64 h-64 justify-center items-center flex">
+          <img class="object-cover h-full rounded-full border-4 border-yellow-400 justify-end" src="/media/myapp/spr.jpg" alt="" />
+        </div>
+        <div class="flex flex-col font-mono font-bold text-1xl text-center mt-5 p-10">
+          <h1 class="ml-25 font-bold text-2xl">scissor paper rock</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, hic.</p>
+        </div>
+        <div class="m-20">
+          <a href="https://github.com/ashish71-ui/scissor-paper-rock" target="_blank"><button class="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded w-20">Github</button></a>
+        </div>
+      </div>
+      <hr class="p-1" />
+    </div>
+    <footer class="bg-gray-800 text-white p-7 text-center h-20">
+      <p>&copy; 2024 Ashish Dhakal. All rights reserved.</p>
+    </footer>
+
+    <script>
+      function scrollToAbout() {
+        window.scrollTo({
+          top: 500,
+         
+          behavior: 'smooth' 
+        })
+      }
+      
+      function scrollToProjects() {
+       
+        window.scrollTo({
+          top: 500,
+         
+          behavior: 'smooth' 
+        })
+      }
+    </script>
+  </body>
+</html>

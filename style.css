@@ -1,0 +1,20 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+.containarr{
+    background-image: url('myapp/2.jpg ');
+   
+    height: 800px; 
+    
+    
+  
+   
+}
+
+.contentcontainar {
+   z-index: 1;
+}
