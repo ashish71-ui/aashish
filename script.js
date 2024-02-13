@@ -13,3 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+
+document.getElementById("burger-btn").addEventListener("click", function() {
+  document.getElementById("nav-links").classList.toggle("hidden");
+});

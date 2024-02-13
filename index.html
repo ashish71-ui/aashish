@@ -14,28 +14,32 @@
 
   <body>
     <div class="containarr">
-      <nav class=" h-18 p-6 fixed top-0 w-full z-50 flex" id="navbar">
-        <div class="text-xl font-bold text-yellow-300">
+      <nav class=" h-18 p-6 fixed top-0 w-full z-50 text-yellow-500 flex justify-between items-center" id="navbar">
+        <div class="text-3xl font-bold">
           <p>Ashish Dhakal</p>
         </div>
-        <div class="container mx-auto flex items-center justify-end">
-          <ul class="flex space-x-8">
+        <div class="hidden md:flex text-3xl font-bold text-2xl flex-grow justify-end items-center md:w-auto">
+          <ul class="flex flex-col md:flex-row text-2xl md:space-x-8">
             <li>
-              <a href="#" class="text-yellow-500  text-2xl px-4 py-3 hover:bg-yellow-200 hover:text-black hover:border-red-500 hover:border-4 hover:rounded-full"><i class="fas fa-home"></i> Home</a>
+              <a href="#" class="nav-link"><i class="fas fa-home"></i> Home</a>
             </li>
             <li>
-              <a href="#1" class="text-yellow-500 px-4 text-2xl py-3 hover:bg-yellow-200 hover:text-black hover:border-red-500 hover:border-4 hover:rounded-full" ><i class="fas fa-info-circle"></i> About</a>
+              <a href="#1" class="nav-link"><i class="fas fa-info-circle"></i> About</a>
             </li>
             <li>
-              <a href="#2"  class="text-yellow-500 px-4 text-2xl py-3 hover:bg-yellow-200 hover:text-black hover:border-red-500 hover:border-4 hover:rounded-full" ><i class="fas fa-laptop-code"></i> Projects</a>
+              <a href="#2" class="nav-link"><i class="fas fa-laptop-code"></i> Projects</a>
             </li>
             <li>
-              <a href="#" class="text-yellow-500 px-4 text-2xl py-3 hover:bg-yellow-200 hover:text-black hover:border-red-500 hover:border-4 hover:rounded-full" ><i class="fas fa-envelope"></i> Blogs</a>
+              <a href="#" class="nav-link"><i class="fas fa-envelope"></i> Blogs</a>
             </li>
           </ul>
         </div>
+        <div class="block md:hidden">
+          <button id="burger-btn" class="text-yellow-500 focus:outline-none">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
       </nav>
-
       
       <div class="pt-20">
         <hr class="border-t border-blue-200" />
@@ -44,15 +48,17 @@
      
 
       <div class="makeblack inset-0 flex justify-center mt-20">
-        <div class="rounded-full overflow-hidden w-64 h-64">
-          <img class="object-cover w-full h-full rounded-full border-4 border-yellow-400" src="/myapp/6.jpg" alt="" />
-        </div>
+        <div class="rounded-full overflow-hidden w-64 h-64 box ">
+            <img class="object-cover w-full h-full rounded-full " src="/myapp/6.jpg" alt="" />
+          </div>
+          
+          
       </div>
       <div class="text-center mt-10">
         <p class="text-5xl text-white tracking-wider">
-          <span class="text-yellow-300 font-bold text-6xl animate-pulse"> Hi, I am <br>A</span>shish Dhakal
+          <span class="text-yellow-600 font-bold text-6xl animate-pulse"> Hi, I am <br>A</span>shish Dhakal
         </p>
-        <p class="text-2xl animate-pulse text-yellow-200">Computer Engineer</p>
+        <p class="text-2xl animate-pulse text-blue-500 font-bold">Computer Engineer</p>
       </div>
 
       <div class="flex justify-center space-x-8 mt-20 p-15">
@@ -63,193 +69,247 @@
       </div>
     </div>
     <hr class="bg-indigo-100" />
-    <div class="contentcontainar  " id="1">
-      <div class="flex flex-row  justify-center items-center p-20">
-        <div class="about justify-center flex flex-col items-center p-10">
-          <div class="text-5xl flex">
+    <div class="contentcontainar h-16  " id="1">  </div>
+      <div class="flex flex-col justify-center items-center p-5 ">
+        <div class="text-5xl flex text-yellow-500 font-serif font-bold " >
             <h5>About Me</h5>
-          </div>
-
-          <div class="font-mono font-bold text-1xl text-center mt-5 w-400 h-500 p-10 bg-white p-4 rounded-md ">
-            <p class="tracking-wider">
-              Passionate web developer skilled in creating seamless, <br />user-centric websites. Proficient in HTML, CSS, and JavaScript,<br /> I bring concepts to life with responsive designs and interactive functionality. <br /> Let's build your digital presence together.
+        </div>
+    
+        <div class="  text-center mt-5 w-full md:w-2/3 lg:w-2/3 p-5  rounded-md shadow-xl bg-indigo-100">
+            <p class="text-2xl font-bold mb-2 text-gray-700 leading-relaxed tracking-wide">
+                Passionate web developer skilled in creating seamless, user-centric websites. Proficient in HTML, CSS, and JavaScript, I bring concepts to life with responsive designs and interactive functionality. Let's build your digital presence together.
             </p>
-          </div>
-          <div class="container mx-auto p-8">
-
-         
-            <div class="grid grid-cols-2 gap-8">
+        </div>
     
-               
-                <div class="bg-white p-4 rounded-md shadow-lg">
-                    <h2 class="text-2xl font-bold mb-2">Education</h2>
-                    <p class="text-gray-600 p-2">Shree Birendra Bidhya Mandir <br> Tikapur,Kailali (2010-2017) </p>
-                    
-                    <p class="text-gray-600 p-2">National School of Science and Technology <br> Lainchaur,Kathmandu (2017-2018)</p>
-                    
-                    <p class="text-gray-600 p-2">Advanced College Of Engineering And Management <br> Kalanki,Kathmandu (2019-Present)</p>
+        <div class="container mx-auto p-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 ">
+                <div class="bg-white p-4 rounded-md shadow-lg bg-indigo-100">
+                    <h2 class="text-2xl font-bold mb-2 text-gray-800">Education</h2>
+                    <p class="text-gray-600">
+                        Shree Birendra Bidhya Mandir <br> Tikapur, Kailali (2010-2017) <br>
+                        National School of Science and Technology <br> Lainchaur, Kathmandu (2017-2018) <br>
+                        Advanced College Of Engineering And Management <br> Kalanki, Kathmandu (2019-Present)
+                    </p>
                 </div>
     
-               
-    
-                <div class="bg-white p-4 rounded-md shadow-lg">
-                    <h2 class="text-2xl font-bold mb-2">Experience</h2>
-                    <p class="text-gray-600">Intern at Pahadi Research Center <br> USA (Dec 2023 - Present)</p>
-                    
+                <div class="bg-white p-4 rounded-md shadow-lg bg-indigo-100">
+                    <h2 class="text-2xl font-bold mb-2 text-gray-800">Experience</h2>
+                    <p class="text-gray-600">
+                        Intern at Pahadi Research Center <br> USA (Dec 2023 - Present)
+                    </p>
                 </div>
-    
-            </div>
-            <div>
-            
             </div>
         </div>
-        
-  
-      </div>
-
-       
-      </div>
     </div>
+    
     <hr class="bg-indigo-100" />
-    <div class="flex flex-row bg-indigo-300 bg-opacity-20 justify-center items-center">
-      <div class="about justify-center flex flex-col items-center p-10">
-        <div class="text-5xl flex">
-          <h5>MY SKILLS</h5>
+    <div class="flex flex-col md:flex-row bg-indigo-300 bg-opacity-20 justify-center items-center py-10 md:py-20">
+      <div class="about justify-center flex flex-col items-center px-5 md:px-10 max-w-3xl mx-auto">
+          <div class="text-5xl text-yellow-500 font-bold font-serif mb-5">
+              <h5>MY SKILLS</h5>
+          </div>
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+              <div class="border border-gray-300 p-4 rounded-lg text-center transition-all duration-500 ease-in-out">
+                  <i class="fab fa-html5 text-5xl text-blue-500 mb-4"></i>
+              </div>
+              <div class="border border-gray-300 p-4 rounded-lg text-center transition-all duration-500 ease-in-out">
+                  <i class="fab fa-css3 text-5xl text-blue-500 mb-4"></i>
+              </div>
+              <div class="border border-gray-300 p-4 rounded-lg text-center transition-all duration-500 ease-in-out">
+                  <i class="fab fa-js text-5xl text-blue-500 mb-4"></i>
+              </div>
+              <div class="border border-gray-300 p-4 rounded-lg text-center transition-all duration-500 ease-in-out">
+                  <i class="fab fa-python text-5xl text-blue-500 mb-4"></i>
+              </div>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-10 mt-5 w-full">
+            <div class="border border-indigo-800 border-4 p-6 rounded-lg text-center relative webdev bg-yellow-300 transition-all duration-500 ease-in-out skill-desc">
+                <h2 class="text-2xl font-bold mb-4">Web Development</h2>
+                <ul class="list-disc pl-6 font-bold">
+                    <li>Proficient in HTML, CSS, and JavaScript.</li>
+                    <li>Experienced in building responsive and user-friendly web interfaces.</li>
+                    <li>Utilization of Tailwind CSS for efficient styling.</li>
+                </ul>
+            </div>
+            <div class="border border-indigo-800 border-4 p-6 rounded-lg text-center relative webdev bg-pink-300 transition-all duration-500 ease-in-out skill-desc">
+                <h2 class="text-2xl font-bold mb-4">Programming Languages</h2>
+                <ul class="list-disc pl-6 font-bold">
+                    <li><strong>Python:</strong> Well-versed in Python programming.</li>
+                    <li><strong>C, C++:</strong> Proficient in the fundamentals of C and C++.</li>
+                </ul>
+            </div>
+            <div class="border border-indigo-800 border-4 p-6 rounded-lg text-center relative webdev bg-gray-300 transition-all duration-500 ease-in-out skill-desc">
+                <h2 class="text-2xl font-bold mb-4">Web Frameworks</h2>
+                <ul class="list-disc pl-6 font-bold">
+                    <li><strong>Django:</strong> Skilled in using the Django web framework for high-level Python development.</li>
+                </ul>
+            </div>
+            <div class="border border-indigo-800 border-4 p-6 rounded-lg text-center relative webdev bg-purple-300 transition-all duration-500 ease-in-out skill-desc">
+                <h2 class="text-2xl font-bold mb-4">Mobile App Development</h2>
+                <ul class="list-disc pl-6 font-bold">
+                    <li><strong>Flutter:</strong> Familiar with Flutter for building cross-platform mobile applications.</li>
+                </ul>
+            </div>
         </div>
-        <div class="flex justify-between items-center p-10">
-          <div class="border border-gray-300 p-4 m-4 rounded-lg text-center">
-            <i class="fab fa-html5 text-5xl text-blue-500 mb-4"></i>
-          </div>
-          <div class="border border-gray-300 p-4 m-4 rounded-lg text-center">
-            <i class="fab fa-css3 text-5xl text-blue-500 mb-4"></i>
-          </div>
-          <div class="border border-gray-300 p-4 m-4 rounded-lg text-center">
-            <i class="fab fa-js text-5xl text-blue-500 mb-4"></i>
-          </div>
-          <div class="border border-gray-300 p-4 m-4 rounded-lg text-center">
-            <i class="fab fa-python text-5xl text-yellow-500 mb-4"></i>
-          </div>
-        </div>
-<div class="flex">
-  <div class="border border-gray-300 p-6 rounded-lg text-center flex-1 m-1 relative webdev text-black-900" style="position: relative;">
-    <div class="background-image" style="background-image: url('/myapp/new.png'); background-size: cover; background-position: center;"></div>
-
-    <div class="overlay"></div>
-
-    <h2 class="text-2xl font-bold mb-4 relative z-10">Web Development</h2>
-    <ul class="list-disc pl-6 font-bold relative z-10">
-        <li>Proficient in HTML, CSS, and JavaScript.</li>
-        <li>Experienced in building responsive and user-friendly web interfaces.</li>
-        <li>Utilization of Tailwind CSS for efficient styling.</li>
-    </ul>
+    </div>
 </div>
-
-      
         
-
-          
-<div class="border border-gray-300 p-6 rounded-lg text-center flex-1 m-1 relative webdev text-black-900" style="position: relative;">
-  <div class="background-image" style="background-image: url('/myapp/pl.jpg'); background-size: cover; background-position: center;"></div>
-  <div class="overlay"></div>
-
-
-  <h2 class="text-2xl font-bold mb-4">Programming Languages</h2>
-            <ul class="list-disc pl-6 font-bold">
-              <li>
-                <strong>Python:</strong> Well-versed in Python programming.
-              </li>
-              <li>
-                <strong>C, C++:</strong> Proficient in the fundamentals of C and C++.
-              </li>
-            </ul>
-          </div>
-
-          <div class="border border-gray-300 p-6 rounded-lg text-center flex-1 m-1 relative webdev text-black-900" style="position: relative;">
-            <div class="background-image" style="background-image: url('/myapp/wf.jpg'); background-size: cover; background-position: center;"></div>
-            <div class="overlay"></div>
-          
-            <h2 class="text-2xl font-bold mb-4">Web Frameworks</h2>
-            <ul class="list-disc pl-6 font-bold ">
-              <li>
-                <strong>Django:</strong> Skilled in using the Django web framework for high-level Python development.
-              </li>
-            </ul>
-          </div>
-          <div class="border border-gray-300 p-6 rounded-lg text-center flex-1 m-1 relative webdev text-black-900" style="position: relative;">
-            <div class="background-image" style="background-image: url('/myapp/md.jpg'); background-size: cover; background-position: center;"></div>
-            <div class="overlay"></div>
-          
-            <h2 class="text-2xl font-bold mb-4">Mobile App Development</h2>
-            <ul class="list-disc pl-6 font-bold">
-              <li>
-                <strong>Flutter:</strong> Familiar with Flutter for building cross-platform mobile applications.
-              </li>
-            </ul>
-          </div>
-        </div>
-        </div>
-      </div>
-    </div>
     <hr class="bg-indigo-100" />
-    <div id="2" class="h-10"></div>
-    <div class="justify-center items-center flex flex-col p-5 ">
-      <div class="text-5xl flex w-full justify-center p-5">
-        <h1>MY PROJECTS</h1>
+    <div id="2" class="h-12"></div>
+    <div class="flex flex-col justify-center items-center p-5 ">
+      <div class="text-5xl flex justify-center w-full p-5 text-yellow-500 font-bold font-serif ">
+          <h1>MY PROJECTS</h1>
       </div>
       <hr class="p-1" />
-      <div class="w-full flex p-5 justify-center bg-indigo-100 shadow-lg bg-opacity-75">
-        <div class="rounded-full overflow-hidden w-64 h-64 justify-center items-center flex flex-col">
-          <img class="object-cover h-full rounded-full border-4 border-yellow-400 justify-end" src="/myapp/as.jpg" alt="" />
-        </div>
-        <div class="flex flex-col font-mono font-bold text-1xl text-center mt-5 p-10">
-          <h1 class="ml-25 font-bold text-2xl">Audio to sign language translator</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, hic. <br /> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima, vel.
-          </p>
-        </div>
-        <div class="m-20">
-          <a href="https://github.com/ashish71-ui/Audio-to-sign-language-translator " target="_blank"><button class="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded w-20">Github</button></a>
-        </div>
-      </div>
-      <hr class="p-1" />
-      <div class="w-full flex p-5 justify-center bg-indigo-100 shadow-lg bg-opacity-75">
-        <div class="rounded-full overflow-hidden w-64 h-64 justify-center items-center flex">
-          <img class="object-cover h-full rounded-full border-4 border-yellow-400 justify-end" src="/myapp/lms.jpg" alt="" />
-        </div>
-        <div class="flex flex-col font-mono font-bold text-1xl text-center mt-5 p-10">
-          <h1 class="ml-25 font-bold text-2xl">Library management system</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, hic.</p>
-        </div>
-        <div class="m-20">
-          <a href="https://github.com/ashish71-ui/library-management-system" target="_blank"><button class="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded w-20">Github</button></a>
-        </div>
-      </div>
-      <hr class="p-1" />
+  
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+         
+          <div class="w-full flex flex-col justify-center shadow-lg border-2 border-yellow-400 p-5 transition-colors duration-300 hover:bg-yellow-100">
+              <div class=" overflow-hidden h-48 flex justify-center items-center">
+                  <img class="object-cover h-full w-full" src="/myapp/as.jpg" alt="" />
+              </div>
+              <div class="flex flex-col font-sans font-bold text-xl text-center mt-5 text-black">
+                  <h1 class="font-bold text-2xl text-yellow-500 font-bold">Audio to Sign Language Translator</h1>
+                  <p class="mt-4">This is my college minor project where given speech is converted into sign Language understood by deaf people.</p>
+                  <div class="mt-6">
+                      <a href="https://github.com/ashish71-ui/Audio-to-sign-language-translator" target="_blank">
+                          <button class="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded">Github</button>
+                      </a>
+                  </div>
+              </div>
+          </div>
+  
+        
+          <div class="w-full flex flex-col justify-center shadow-lg border-2 border-yellow-400 p-5 transition-colors duration-300 hover:bg-yellow-100">
+              <div class=" overflow-hidden h-48 flex justify-center items-center">
+                  <img class="object-cover h-full w-full" src="/myapp/lms.jpg" alt="" />
+              </div>
+              <div class="flex flex-col font-sans font-bold text-xl text-center mt-5 text-black">
+                  <h1 class="font-bold text-2xl text-yellow-500 font-bold">Library Management System</h1>
+                  <p class="mt-4">This is simple application made in Django framework where students and librarian deal with management of books.</p>
+                  <div class="mt-6">
+                      <a href="https://github.com/ashish71-ui/library-management-system" target="_blank">
+                          <button class="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded">Github</button>
+                      </a>
+                  </div>
+              </div>
+          </div>
 
-      <div class="w-full flex p-5 justify-center bg-indigo-100 shadow-lg bg-opacity-75">
-        <div class="rounded-full overflow-hidden w-64 h-64 justify-center items-center flex">
-          <img class="object-cover h-full rounded-full border-4 border-yellow-400 justify-end" src="/myapp/spr.jpg" alt="" />
+          <div class="w-full flex flex-col justify-center shadow-lg border-2 border-yellow-400 p-5 transition-colors duration-300 hover:bg-yellow-100">
+            <div class=" overflow-hidden h-48 flex justify-center items-center">
+                <img class="object-cover h-full w-full" src="/myapp/tic.png" alt="" />
+            </div>
+            <div class="flex flex-col font-sans font-bold text-xl text-center mt-5 text-black">
+                <h1 class="font-bold text-2xl text-yellow-500 font-bold">Tic Tac Toe</h1>
+                <p class="mt-4">This is simple fun game made using HTML, CSS and JS.</p>
+                <div class="mt-6">
+                    <a href="https://github.com/ashish71-ui/tictactoe" target="_blank">
+                        <button class="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded">Github</button>
+                    </a>
+                </div>
+            </div>
         </div>
-        <div class="flex flex-col font-mono font-bold text-1xl text-center mt-5 p-10">
-          <h1 class="ml-25 font-bold text-2xl">scissor paper rock</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, hic.</p>
-        </div>
-        <div class="m-20">
-          <a href="https://github.com/ashish71-ui/scissor-paper-rock" target="_blank"><button class="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded w-20">Github</button></a>
-        </div>
+        <div class="w-full flex flex-col justify-center shadow-lg border-2 border-yellow-400 p-5 transition-colors duration-300 hover:bg-yellow-100">
+          <div class=" overflow-hidden h-48 flex justify-center items-center">
+              <img class="object-cover h-full w-full" src="/myapp/amazon.png" alt="" />
+          </div>
+          <div class="flex flex-col font-sans font-bold text-xl text-center mt-5 text-black">
+              <h1 class="font-bold text-2xl text-yellow-500 font-bold">Amazon Shopping Page</h1>
+              <p class="mt-4">This is the UI page of Amazon Shopping Site created using simple HTML and CS.</p>
+              <div class="mt-6">
+                  <a href="https://github.com/ashish71-ui/Amazon-Shopping-page" target="_blank">
+                      <button class="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded">Github</button>
+                  </a>
+              </div>
+          </div>
       </div>
+      <div class="w-full flex flex-col justify-center shadow-lg border-2 border-yellow-400 p-5 transition-colors duration-300 hover:bg-yellow-100">
+        <div class=" overflow-hidden h-48 flex justify-center items-center">
+            <img class="object-cover h-full w-full" src="/myapp/society.jpg" alt="" />
+        </div>
+        <div class="flex flex-col font-sans font-bold text-xl text-center mt-5 text-black">
+            <h1 class="font-bold text-2xl text-yellow-500 font-bold">Society Engagement System</h1>
+            <p class="mt-4">This is the application developed in Django framework which involves interaction of local bodies and their citizens for solving various problems.</p>
+            <div class="mt-6">
+                <a href="https://github.com/Mansish01/Tech_Army" target="_blank">
+                    <button class="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded">Github</button>
+                </a>
+            </div>
+        </div>
+    </div>
+  
+        
+          <div class="w-full flex flex-col justify-center shadow-lg border-2 border-yellow-400 p-5 transition-colors duration-300 hover:bg-yellow-100">
+              <div class=" overflow-hidden h-48 flex justify-center items-center">
+                  <img class="object-cover h-full w-full" src="/myapp/spr.jpg" alt="" />
+              </div>
+              <div class="flex flex-col font-sans font-bold text-xl text-center mt-5 text-black">
+                  <h1 class="font-bold text-2xl text-yellow-500 font-bold">Scissor Paper Rock</h1>
+                  <p class="mt-4">This is basic fun game made using HTML,CSS and JS.</p>
+                  <div class="mt-6">
+                      <a href="https://github.com/ashish71-ui/scissor-paper-rock" target="_blank">
+                          <button class="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded">Github</button>
+                      </a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  
       <hr class="p-1" />
-    </div >
-    <div class="bg-indigo-200 flex justify-center items-center flex-col">
-      <div class="flex justify-center items-center text-bold text-2xl">
-        <h1>Checkout my resume</h1>
-      </div>
-      
-      <div class="m-10 flex justify-center items-center">
-        <a href="/myapp/cv.pdf" download="cv.pdf" target="_blank"><button class="bg-blue-500 hover:bg-blue-400 text-white font-bold py-6 px-8 border-b-10 border-blue-700 hover:border-blue-500 rounded w-30">Download a Copy</button></a>
-      </div>
+  </div>
+  
+  <div class="flex flex-col md:flex-row justify-center md:space-x-4">
+    
+    <div class="w-full md:w-1/2 mr-4 mb-4 md:mb-0">
+        <div class="bg-gray-100 p-8 rounded-lg shadow-lg">
+            <h2 class="text-center text-gray-800 text-2xl mb-4 text-yellow-500 font-bold font-serif">Contact Details</h2>
+            <div class="flex flex-col items-center md:flex-col md:items-start">
+                <div class="flex items-center mb-2">
+                    <i class="fas fa-envelope text-black-500 text-xl mr-2"></i>
+                    <span class="text-gray-800">aashishdhakal71@gmail.com</span>
+                </div>
+                <div class="flex items-center mb-2">
+                    <i class="fas fa-phone-alt text-black-500 text-xl mr-2"></i>
+                    <span class="text-gray-800">9868932919</span>
+                </div>
+                <div class="flex items-center mb-2">
+                    <i class="fas fa-map-marker-alt text-black-500 text-xl mr-2"></i>
+                    <span class="text-gray-800">Kathmandu, Nepal</span>
+                </div>
+              
+                <div class="mt-6">
+                    <a href="/myapp/cv.pdf" download="cv.png" target="_blank">
+                        <button class="bg-blue-500 hover:bg-blue-400 text-white font-bold py-4 px-6 border-b-4 border-blue-700 hover:border-blue-500 rounded">Download CV</button>
+                    </a>
+                </div>
+                <div class="flex justify-center md:justify-start space-x-7 mt-5 mb-8">
+                    <a href="https://github.com/ashish71-ui" target="_blank" class="hover:text-blue-400"><i class="fab fa-github fa-2xl"></i></a>
+                    <a href="https://www.facebook.com/aashish.dhakal.54/" target="_blank" class="hover:text-blue-400"><i class="fab fa-facebook fa-2xl"></i></a>
+                    <a href="https://www.linkedin.com/in/aashish-dhakal-b72723213/" target="_blank" class="hover:text-blue-400"><i class="fab fa-linkedin-in fa-2xl"></i></a>
+                    <a href="mailto:aashishdhakal71@gmail.com" class="hover:text-blue-400"><i class="far fa-envelope fa-2xl"></i></a>
+                </div>
+            </div>
+        </div>
     </div>
    
+    <div class="w-full md:w-1/2">
+        <div class="bg-gray-100 p-8 rounded-lg shadow-lg">
+            <h2 class="text-center text-gray-800 text-2xl mb-4 text-yellow-500 font-bold font-serif">Contact Me</h2>
+            <form id="contactForm" class="flex flex-col" action="#" method="POST">
+                <input type="text" name="name" placeholder="Your Name" class="py-2 px-4 mb-4 rounded-lg border border-gray-400 focus:border-blue-500 focus:outline-none" required>
+                <input type="email" name="email" placeholder="Your Email" class="py-2 px-4 mb-4 rounded-lg border border-gray-400 focus:border-blue-500 focus:outline-none" required>
+                <textarea name="message" placeholder="Your Message" rows="4" class="py-2 px-4 mb-4 rounded-lg border border-gray-400 focus:border-blue-500 focus:outline-none" required></textarea>
+                <div class="mt-2">
+                    <a href="" target="_blank" class="">
+                        <button class="bg-blue-500 hover:bg-blue-400 text-white font-bold py-4 px-8 border-b-4 border-blue-700 hover:border-blue-500 rounded">Submit</button>
+                    </a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
     <footer class="bg-gray-800 text-white p-7 text-center h-20">
       <p>&copy; 2024 Ashish Dhakal. All rights reserved.</p>
     </footer>

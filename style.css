@@ -1,33 +1,37 @@
-
 body {
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: column;
 }
-html{
+
+html {
     scroll-behavior: smooth;
 }
-.containarr{
-    background-image: url('myapp/wall.jpg ');
-   
-    height: 800px; 
-    
-    
-  
-   
+
+.containarr {
+    background-image: url('myapp/wall.jpg');
+    /* background-size: cover; */
+    /* background-position: center; */
+    height: 100vh;
+    /* Adjust the height as needed */
+}
+
+.nav-bg-black {
+    background-color: black;
 }
 
 .contentcontainar {
-   z-index: 1;
+    z-index: 1;
 }
+
 .background-image {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    opacity: 0.15; 
+    opacity: 0.15;
 }
 
 .overlay {
@@ -38,6 +42,74 @@ html{
     left: 0;
     right: 0;
     bottom: 0;
-   
-    z-index: 1; /* Adjust the z-index to position the overlay above the background image */
+
+    z-index: 1;
+    /* Adjust the z-index to position the overlay above the background image */
+}
+
+.skill-icon {
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: center;
+    transition: background-color 0.5s ease-in-out;
+}
+
+
+.skill-icon:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.skill-desc {
+    transition: background-color 0.5s ease-in-out;
+}
+
+.skill-desc:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.box {
+    width: 60vmin;
+    height: 50vmin;
+    display: grid;
+    place-content: center;
+    color: white;
+    text-shadow: 0 1px 0 #000;
+
+    --border-angle: 0turn;
+    --main-bg: conic-gradient(from var(--border-angle),
+            #213,
+            #112 5%,
+            #112 60%,
+            rgb(51, 47, 17) 95%);
+
+    border: solid 8px transparent;
+    border-radius: 2em;
+    --gradient-border: conic-gradient(from var(--border-angle), transparent 25%, #08f, #f03 99%, transparent);
+
+    background:
+      
+        var(--main-bg) padding-box,
+       
+        var(--gradient-border) border-box,
+        var(--main-bg) border-box;
+
+    background-position: center center;
+
+    animation: bg-spin 5s linear infinite;
+
+    @keyframes bg-spin {
+        to {
+            --border-angle: 1turn;
+        }
+    }
+
+    &:hover {
+        animation-play-state: paused;
+    }
+}
+
+@property --border-angle {
+    syntax: "<angle>";
+    inherits: true;
+    initial-value: 0turn;
 }
